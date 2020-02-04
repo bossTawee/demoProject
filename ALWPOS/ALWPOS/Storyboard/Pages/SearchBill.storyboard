@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bJX-mD-DPC">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kanit-Bold.ttf">
+            <string>Kanit-Bold</string>
+        </array>
+        <array key="Kanit-Regular.ttf">
+            <string>Kanit-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--ค้นบิล-->
+        <scene sceneID="4qC-Qn-WLN">
+            <objects>
+                <navigationController id="bJX-mD-DPC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="ค้นบิล" image="Tabbar_SearchBill" id="CQY-ig-jJW"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mnF-MD-XUY">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="04d-cW-Dug" kind="relationship" relationship="rootViewController" id="xaL-KI-ne3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uf-lO-4o1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-329" y="149"/>
+        </scene>
+        <!--Search Bill View Controller-->
+        <scene sceneID="4Py-vi-QQ7">
+            <objects>
+                <viewController id="04d-cW-Dug" customClass="SearchBillViewController" customModule="ALWPOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kkw-Oe-Ora">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="l3s-tE-afG">
+                                <rect key="frame" x="8" y="58" width="1008" height="652"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oal-66-tF9">
+                                        <rect key="frame" x="0.0" y="0.0" width="504" height="652"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6q-6D-fOJ">
+                                                <rect key="frame" x="0.0" y="40" width="504" height="436"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="tWd-sq-Cch">
+                                                        <rect key="frame" x="0.0" y="0.0" width="504" height="40"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รหัสสินค้า" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2B-hw-EGO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                                                                <color key="backgroundColor" red="0.1764705882" green="0.58431372550000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="80" id="w32-yB-7dw"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รายการสินค้า" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csh-H2-rHj">
+                                                                <rect key="frame" x="82" y="0.0" width="200" height="40"/>
+                                                                <color key="backgroundColor" red="0.1764705882" green="0.58431372550000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ราคาสินค้า" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNE-cd-bVN">
+                                                                <rect key="frame" x="284" y="0.0" width="72" height="40"/>
+                                                                <color key="backgroundColor" red="0.1764705882" green="0.58431372550000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="72" id="vZx-sG-SLe"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="จำนวน" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mL9-48-VaM">
+                                                                <rect key="frame" x="358" y="0.0" width="72" height="40"/>
+                                                                <color key="backgroundColor" red="0.1764705882" green="0.58431372550000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="72" id="Xgy-YK-LLO"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ราคารวม" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ftg-6L-gFJ">
+                                                                <rect key="frame" x="432" y="0.0" width="72" height="40"/>
+                                                                <color key="backgroundColor" red="0.1764705882" green="0.58431372550000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="72" id="KvQ-3i-pE8"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="sZQ-v3-hdD"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nWe-f7-Qtn">
+                                                        <rect key="frame" x="0.0" y="48" width="504" height="388"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <prototypes>
+                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchBillMenuCell" rowHeight="40" id="ILy-Ks-Ah8" customClass="SearchBillMenuTableViewCell" customModule="ALWPOS" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="28" width="504" height="40"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ILy-Ks-Ah8" id="XQH-4E-FLb">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="504" height="40"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <subviews>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="PcT-Y4-mf7">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="504" height="40"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00001" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8b-ER-wW2">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="width" constant="80" id="fBP-5F-G86"/>
+                                                                                    </constraints>
+                                                                                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รายการสินค้า" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTV-Mp-knN">
+                                                                                    <rect key="frame" x="82" y="0.0" width="200" height="40"/>
+                                                                                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddY-bA-ets">
+                                                                                    <rect key="frame" x="284" y="0.0" width="72" height="40"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="width" constant="72" id="IYE-0C-Ch6"/>
+                                                                                    </constraints>
+                                                                                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRf-MB-s9Z">
+                                                                                    <rect key="frame" x="358" y="0.0" width="72" height="40"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="width" constant="72" id="Qaq-Yr-fF5"/>
+                                                                                    </constraints>
+                                                                                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6B-ei-Mnt">
+                                                                                    <rect key="frame" x="432" y="0.0" width="72" height="40"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="width" constant="72" id="r9U-GK-Aex"/>
+                                                                                    </constraints>
+                                                                                    <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="trailing" secondItem="PcT-Y4-mf7" secondAttribute="trailing" id="4Q6-e3-ue0"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="PcT-Y4-mf7" secondAttribute="bottom" id="A0F-hl-TVd"/>
+                                                                        <constraint firstItem="PcT-Y4-mf7" firstAttribute="leading" secondItem="XQH-4E-FLb" secondAttribute="leading" id="Qs7-oM-GBN"/>
+                                                                        <constraint firstItem="PcT-Y4-mf7" firstAttribute="top" secondItem="XQH-4E-FLb" secondAttribute="top" id="s6t-qU-X7L"/>
+                                                                    </constraints>
+                                                                </tableViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="codeLabel" destination="w8b-ER-wW2" id="EYR-0i-lwd"/>
+                                                                    <outlet property="orderName" destination="HTV-Mp-knN" id="xIi-AK-WC5"/>
+                                                                    <outlet property="orderSumLabel" destination="nRf-MB-s9Z" id="zlN-Mv-kCh"/>
+                                                                    <outlet property="priceLabel" destination="ddY-bA-ets" id="VHA-xe-IwD"/>
+                                                                    <outlet property="totalPriceLabel" destination="D6B-ei-Mnt" id="3qo-2s-Xw2"/>
+                                                                </connections>
+                                                            </tableViewCell>
+                                                        </prototypes>
+                                                    </tableView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="nWe-f7-Qtn" firstAttribute="top" secondItem="tWd-sq-Cch" secondAttribute="bottom" constant="8" id="5Kr-36-ZvI"/>
+                                                    <constraint firstAttribute="trailing" secondItem="nWe-f7-Qtn" secondAttribute="trailing" id="Ftq-T6-ENd"/>
+                                                    <constraint firstItem="nWe-f7-Qtn" firstAttribute="leading" secondItem="h6q-6D-fOJ" secondAttribute="leading" id="MdT-JH-E5g"/>
+                                                    <constraint firstAttribute="bottom" secondItem="nWe-f7-Qtn" secondAttribute="bottom" id="TWH-0P-g8M"/>
+                                                    <constraint firstItem="tWd-sq-Cch" firstAttribute="top" secondItem="h6q-6D-fOJ" secondAttribute="top" id="UXX-WH-pw5"/>
+                                                    <constraint firstItem="tWd-sq-Cch" firstAttribute="leading" secondItem="h6q-6D-fOJ" secondAttribute="leading" id="ZV1-UW-yeM"/>
+                                                    <constraint firstAttribute="trailing" secondItem="tWd-sq-Cch" secondAttribute="trailing" id="nTM-1m-aNn"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M47-XQ-Zub">
+                                                <rect key="frame" x="0.0" y="492" width="504" height="160"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rap-76-0wk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="504" height="90"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBE-d6-Rib">
+                                                                <rect key="frame" x="0.0" y="0.0" width="504" height="90"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qxc-zH-ZK5">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="90"/>
+                                                                        <subviews>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sgK-Nj-wCo">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="90"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รวม :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ga-Tu-i4H">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                                                                        <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ส่วนลด :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lt-nx-q9U">
+                                                                                        <rect key="frame" x="0.0" y="30" width="150" height="30"/>
+                                                                                        <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รวมทั้งหมด :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rvy-It-hkx">
+                                                                                        <rect key="frame" x="0.0" y="60" width="150" height="30"/>
+                                                                                        <fontDescription key="fontDescription" name="Kanit-Bold" family="Kanit" pointSize="17"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="sgK-Nj-wCo" firstAttribute="leading" secondItem="qxc-zH-ZK5" secondAttribute="leading" id="Gxt-9o-AqC"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="sgK-Nj-wCo" secondAttribute="bottom" id="IJU-r7-coW"/>
+                                                                            <constraint firstAttribute="width" constant="150" id="KyK-Vu-Giz"/>
+                                                                            <constraint firstItem="sgK-Nj-wCo" firstAttribute="top" secondItem="qxc-zH-ZK5" secondAttribute="top" id="dGa-jv-Axf"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="sgK-Nj-wCo" secondAttribute="trailing" id="lvU-cH-c2Z"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kol-DN-hOK">
+                                                                        <rect key="frame" x="150" y="0.0" width="354" height="90"/>
+                                                                        <subviews>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vxJ-jm-3lg">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="90"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOq-et-ehL">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="30"/>
+                                                                                        <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXq-z6-wdj">
+                                                                                        <rect key="frame" x="0.0" y="30" width="354" height="30"/>
+                                                                                        <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwS-YM-Xif">
+                                                                                        <rect key="frame" x="0.0" y="60" width="354" height="30"/>
+                                                                                        <fontDescription key="fontDescription" name="Kanit-Bold" family="Kanit" pointSize="17"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="trailing" secondItem="vxJ-jm-3lg" secondAttribute="trailing" id="ElH-kR-0oZ"/>
+                                                                            <constraint firstItem="vxJ-jm-3lg" firstAttribute="top" secondItem="Kol-DN-hOK" secondAttribute="top" id="c8g-ss-o2L"/>
+                                                                            <constraint firstItem="vxJ-jm-3lg" firstAttribute="leading" secondItem="Kol-DN-hOK" secondAttribute="leading" id="eal-OA-zgA"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="vxJ-jm-3lg" secondAttribute="bottom" id="q2m-WL-k4f"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="bBE-d6-Rib" firstAttribute="leading" secondItem="rap-76-0wk" secondAttribute="leading" id="3GW-nT-F6B"/>
+                                                            <constraint firstAttribute="trailing" secondItem="bBE-d6-Rib" secondAttribute="trailing" id="Fzn-PB-6gE"/>
+                                                            <constraint firstItem="bBE-d6-Rib" firstAttribute="top" secondItem="rap-76-0wk" secondAttribute="top" id="Wu0-V2-RM5"/>
+                                                            <constraint firstAttribute="bottom" secondItem="bBE-d6-Rib" secondAttribute="bottom" id="lk6-XT-oll"/>
+                                                            <constraint firstAttribute="height" constant="90" id="swA-R6-8jP"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="rap-76-0wk" firstAttribute="leading" secondItem="M47-XQ-Zub" secondAttribute="leading" id="YmE-YM-Ny8"/>
+                                                    <constraint firstItem="rap-76-0wk" firstAttribute="top" secondItem="M47-XQ-Zub" secondAttribute="top" id="nt0-ec-uGO"/>
+                                                    <constraint firstAttribute="trailing" secondItem="rap-76-0wk" secondAttribute="trailing" id="wZC-A1-yPt"/>
+                                                    <constraint firstAttribute="height" constant="160" id="z6J-3B-suW"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGh-qL-6dv">
+                                                <rect key="frame" x="0.0" y="0.0" width="504" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="thB-C0-35D"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="h6q-6D-fOJ" firstAttribute="leading" secondItem="oal-66-tF9" secondAttribute="leading" id="5Wn-RF-GPd"/>
+                                            <constraint firstAttribute="bottom" secondItem="M47-XQ-Zub" secondAttribute="bottom" id="7zb-lj-GbS"/>
+                                            <constraint firstItem="M47-XQ-Zub" firstAttribute="leading" secondItem="oal-66-tF9" secondAttribute="leading" id="Lbf-XL-Kda"/>
+                                            <constraint firstItem="h6q-6D-fOJ" firstAttribute="top" secondItem="aGh-qL-6dv" secondAttribute="bottom" id="Vse-3l-yFY"/>
+                                            <constraint firstItem="aGh-qL-6dv" firstAttribute="top" secondItem="oal-66-tF9" secondAttribute="top" id="Xz7-6Q-YLG"/>
+                                            <constraint firstAttribute="trailing" secondItem="aGh-qL-6dv" secondAttribute="trailing" id="cEO-Pa-veW"/>
+                                            <constraint firstAttribute="trailing" secondItem="M47-XQ-Zub" secondAttribute="trailing" id="hqo-YC-V5h"/>
+                                            <constraint firstItem="aGh-qL-6dv" firstAttribute="leading" secondItem="oal-66-tF9" secondAttribute="leading" id="umH-AA-RfF"/>
+                                            <constraint firstItem="M47-XQ-Zub" firstAttribute="top" secondItem="h6q-6D-fOJ" secondAttribute="bottom" constant="16" id="xVa-Xp-vWU"/>
+                                            <constraint firstAttribute="trailing" secondItem="h6q-6D-fOJ" secondAttribute="trailing" id="yhN-aT-3Ym"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9f9-hj-yuO">
+                                        <rect key="frame" x="504" y="0.0" width="504" height="652"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGb-uw-Osl">
+                                                <rect key="frame" x="16" y="0.0" width="488" height="40"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="r7u-p1-6kh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="488" height="40"/>
+                                                        <subviews>
+                                                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="4At-Cb-1Vh">
+                                                                <rect key="frame" x="0.0" y="0.0" width="488" height="40"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </searchBar>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="r7u-p1-6kh" secondAttribute="bottom" id="7Ai-fV-hDE"/>
+                                                    <constraint firstItem="r7u-p1-6kh" firstAttribute="leading" secondItem="QGb-uw-Osl" secondAttribute="leading" id="MO6-Xk-tch"/>
+                                                    <constraint firstAttribute="trailing" secondItem="r7u-p1-6kh" secondAttribute="trailing" id="Pif-4z-Nj8"/>
+                                                    <constraint firstAttribute="height" constant="40" id="YP4-nG-dQn"/>
+                                                    <constraint firstItem="r7u-p1-6kh" firstAttribute="top" secondItem="QGb-uw-Osl" secondAttribute="top" id="xUp-w0-Jhu"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="58D-Py-H40">
+                                                <rect key="frame" x="16" y="580" width="488" height="72"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WJo-tw-SKN">
+                                                        <rect key="frame" x="124" y="11" width="240" height="50"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1P3-Dy-HgO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25P-h3-8sn">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
+                                                                        <color key="backgroundColor" red="0.94117647058823528" green="0.035294117647058823" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                                                                        <state key="normal" title="ยกเลิกบิล">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="cancelBillButtonTapped:" destination="04d-cW-Dug" eventType="touchUpInside" id="Qwa-KU-gF4"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zD2-qs-g7N">
+                                                                        <rect key="frame" x="125" y="0.0" width="115" height="50"/>
+                                                                        <color key="backgroundColor" red="0.16862745098039217" green="0.58039215686274503" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                                                                        <state key="normal" title="พิมพ์ใบเสร็จ">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="printBillButtonTapped:" destination="04d-cW-Dug" eventType="touchUpInside" id="Yp1-uW-ac4"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="1P3-Dy-HgO" secondAttribute="bottom" id="7a0-0z-H71"/>
+                                                            <constraint firstAttribute="height" constant="50" id="8CR-1Z-QzM"/>
+                                                            <constraint firstItem="1P3-Dy-HgO" firstAttribute="leading" secondItem="WJo-tw-SKN" secondAttribute="leading" id="PBH-hO-mTA"/>
+                                                            <constraint firstItem="1P3-Dy-HgO" firstAttribute="top" secondItem="WJo-tw-SKN" secondAttribute="top" id="gEm-Gh-r7Z"/>
+                                                            <constraint firstAttribute="trailing" secondItem="1P3-Dy-HgO" secondAttribute="trailing" id="xN7-pG-OrL"/>
+                                                            <constraint firstAttribute="width" constant="240" id="yD6-T5-hVf"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="WJo-tw-SKN" firstAttribute="centerY" secondItem="58D-Py-H40" secondAttribute="centerY" id="8KT-Ux-uV0"/>
+                                                    <constraint firstItem="WJo-tw-SKN" firstAttribute="centerX" secondItem="58D-Py-H40" secondAttribute="centerX" id="Cih-Mo-Qfj"/>
+                                                    <constraint firstAttribute="height" constant="72" id="jFb-0r-Dhr"/>
+                                                </constraints>
+                                            </view>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="75J-bl-TPd">
+                                                <rect key="frame" x="16" y="88" width="488" height="476"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchBillCell" rowHeight="40" id="HMx-zd-eL5" customClass="SearchBillTableViewCell" customModule="ALWPOS" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="28" width="488" height="40"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HMx-zd-eL5" id="Khj-nb-lkd">
+                                                            <rect key="frame" x="0.0" y="0.0" width="488" height="40"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="9Ej-lW-NAU">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="488" height="40"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000000001" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7U-Uj-2J1">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="162" height="40"/>
+                                                                            <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01/05/2562 11:16:38" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TjI-GL-jln">
+                                                                            <rect key="frame" x="164" y="0.0" width="140" height="40"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="140" id="gCq-V3-aj2"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0f1-yx-1T6">
+                                                                            <rect key="frame" x="306" y="0.0" width="100" height="40"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="100" id="43h-xX-qc3"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เงินสด" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mnp-jG-FVk">
+                                                                            <rect key="frame" x="408" y="0.0" width="80" height="40"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="80" id="umj-yd-NVr"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="9Ej-lW-NAU" firstAttribute="leading" secondItem="Khj-nb-lkd" secondAttribute="leading" id="44Q-Py-yt2"/>
+                                                                <constraint firstAttribute="bottom" secondItem="9Ej-lW-NAU" secondAttribute="bottom" id="KWV-C1-yde"/>
+                                                                <constraint firstItem="9Ej-lW-NAU" firstAttribute="top" secondItem="Khj-nb-lkd" secondAttribute="top" id="VH8-v5-YFS"/>
+                                                                <constraint firstAttribute="trailing" secondItem="9Ej-lW-NAU" secondAttribute="trailing" id="bJg-SP-hEM"/>
+                                                            </constraints>
+                                                        </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="billLabel" destination="d7U-Uj-2J1" id="Pay-XR-sUZ"/>
+                                                            <outlet property="dateLabel" destination="TjI-GL-jln" id="Xbz-zm-aWf"/>
+                                                            <outlet property="paymentType" destination="Mnp-jG-FVk" id="OTf-i5-uU1"/>
+                                                            <outlet property="totalPriceLabel" destination="0f1-yx-1T6" id="suu-mE-ImC"/>
+                                                        </connections>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                            </tableView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="hg7-Bb-XCc">
+                                                <rect key="frame" x="16" y="40" width="488" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เลขที่การขาย" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pR-cl-v0v">
+                                                        <rect key="frame" x="0.0" y="0.0" width="162" height="40"/>
+                                                        <color key="backgroundColor" red="0.1764705882" green="0.58431372550000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="วันที่" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWp-cl-08a">
+                                                        <rect key="frame" x="164" y="0.0" width="140" height="40"/>
+                                                        <color key="backgroundColor" red="0.1764705882" green="0.58431372550000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="XEw-8Q-lpb"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ยอดรวม" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-sc-2ep">
+                                                        <rect key="frame" x="306" y="0.0" width="100" height="40"/>
+                                                        <color key="backgroundColor" red="0.1764705882" green="0.58431372550000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="8DG-U9-AQB"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="จ่ายโดย" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hz4-dY-x6a">
+                                                        <rect key="frame" x="408" y="0.0" width="80" height="40"/>
+                                                        <color key="backgroundColor" red="0.1764705882" green="0.58431372550000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="80" id="N6o-ph-et3"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="t1r-zI-WrB"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="58D-Py-H40" secondAttribute="trailing" id="1Uu-93-hrd"/>
+                                            <constraint firstAttribute="trailing" secondItem="QGb-uw-Osl" secondAttribute="trailing" id="7q8-mI-Nv7"/>
+                                            <constraint firstAttribute="trailing" secondItem="hg7-Bb-XCc" secondAttribute="trailing" id="JCh-oY-cKP"/>
+                                            <constraint firstItem="75J-bl-TPd" firstAttribute="leading" secondItem="9f9-hj-yuO" secondAttribute="leading" constant="16" id="K7C-cQ-MfW"/>
+                                            <constraint firstItem="hg7-Bb-XCc" firstAttribute="top" secondItem="QGb-uw-Osl" secondAttribute="bottom" id="LRD-RM-YRP"/>
+                                            <constraint firstItem="QGb-uw-Osl" firstAttribute="top" secondItem="9f9-hj-yuO" secondAttribute="top" id="Mof-uD-IVr"/>
+                                            <constraint firstItem="58D-Py-H40" firstAttribute="top" secondItem="75J-bl-TPd" secondAttribute="bottom" constant="16" id="eHv-eQ-1X3"/>
+                                            <constraint firstItem="75J-bl-TPd" firstAttribute="top" secondItem="hg7-Bb-XCc" secondAttribute="bottom" constant="8" id="hWx-uO-agp"/>
+                                            <constraint firstItem="QGb-uw-Osl" firstAttribute="leading" secondItem="9f9-hj-yuO" secondAttribute="leading" constant="16" id="o8f-N9-53e"/>
+                                            <constraint firstItem="hg7-Bb-XCc" firstAttribute="leading" secondItem="9f9-hj-yuO" secondAttribute="leading" constant="16" id="vdH-oN-kzT"/>
+                                            <constraint firstItem="58D-Py-H40" firstAttribute="leading" secondItem="9f9-hj-yuO" secondAttribute="leading" constant="16" id="wDj-p7-f9g"/>
+                                            <constraint firstAttribute="bottom" secondItem="58D-Py-H40" secondAttribute="bottom" id="yHJ-Dh-xxr"/>
+                                            <constraint firstAttribute="trailing" secondItem="75J-bl-TPd" secondAttribute="trailing" id="yyn-rt-BVu"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eH2-tr-VGw" firstAttribute="bottom" secondItem="l3s-tE-afG" secondAttribute="bottom" constant="8" id="9QL-2P-F0Z"/>
+                            <constraint firstItem="eH2-tr-VGw" firstAttribute="trailing" secondItem="l3s-tE-afG" secondAttribute="trailing" constant="8" id="KKz-k4-WS3"/>
+                            <constraint firstItem="l3s-tE-afG" firstAttribute="top" secondItem="eH2-tr-VGw" secondAttribute="top" constant="8" id="YNP-AU-lVa"/>
+                            <constraint firstItem="l3s-tE-afG" firstAttribute="leading" secondItem="eH2-tr-VGw" secondAttribute="leading" constant="8" id="hdT-YA-guu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eH2-tr-VGw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="doG-gF-Js9"/>
+                    <connections>
+                        <outlet property="billSearchBar" destination="4At-Cb-1Vh" id="M3M-De-yj6"/>
+                        <outlet property="cancelBillButton" destination="25P-h3-8sn" id="uYN-E2-eK3"/>
+                        <outlet property="discountLabel" destination="QXq-z6-wdj" id="W6K-2T-WJC"/>
+                        <outlet property="printBillButton" destination="zD2-qs-g7N" id="IDd-IB-aHK"/>
+                        <outlet property="searchBillMenuTableView" destination="nWe-f7-Qtn" id="l1p-9t-Hdg"/>
+                        <outlet property="searchBillTableView" destination="75J-bl-TPd" id="kpU-S2-0AG"/>
+                        <outlet property="sumLabel" destination="TOq-et-ehL" id="lip-Z1-lMr"/>
+                        <outlet property="totalLabel" destination="nwS-YM-Xif" id="BQx-ZQ-GLM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k0c-r0-yZj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444.72656249999994" y="147.65625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Tabbar_SearchBill" width="33" height="33"/>
+    </resources>
+</document>

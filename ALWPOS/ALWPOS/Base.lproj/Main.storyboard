@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ALWPOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="bp0-ne-EIh" kind="show" identifier="goToLoginWithSegue" id="iRz-jv-jbb"/>
+                        <segue destination="ONa-F2-SGS" kind="show" identifier="goToHomeSb" id="mVQ-5H-kF7"/>
+                        <segue destination="YLB-NM-KTO" kind="show" identifier="gotoManageBrandWithSegue" id="tUf-43-aag"/>
+                        <segue destination="7ek-wo-iGr" kind="show" identifier="gotoMainLoginWithSegue" id="xS0-Pl-bhm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="355"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="Co9-iX-cEI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="bp0-ne-EIh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bMa-x6-Ci9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="617" y="355"/>
+        </scene>
+        <!--ManageBrand-->
+        <scene sceneID="s45-8n-iWN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ManageBrand" id="YLB-NM-KTO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hC3-GX-3Qq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4KU-4a-htl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="581" y="222"/>
+        </scene>
+        <!--MainLogin-->
+        <scene sceneID="hW6-mG-tdN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainLogin" id="7ek-wo-iGr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="RiP-sd-Exb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dVO-Z1-eqe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575" y="34"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="fOE-Zg-5xE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="ONa-F2-SGS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W7x-eI-Jaj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="644"/>
+        </scene>
+    </scenes>
+</document>

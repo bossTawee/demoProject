@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tYl-09-TqO">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="UY7-QA-Rn8">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="tYl-09-TqO" customClass="LoginViewController" customModule="ALWPOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kF3-1K-FBS">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvg-33-mlJ">
+                                <rect key="frame" x="388" y="339" width="248" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2lC-wa-IfW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="select position"/>
+                                <connections>
+                                    <action selector="positionBtnTap:" destination="tYl-09-TqO" eventType="touchUpInside" id="oBB-wJ-4SA"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="svU-84-7fy">
+                                <rect key="frame" x="388" y="416" width="248" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bzh-Rb-y4L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pY-0g-7RY">
+                                <rect key="frame" x="388" y="486" width="248" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="qjv-B1-lrB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="loginBtnTapWith_sender:" destination="tYl-09-TqO" eventType="touchUpInside" id="hI4-WQ-3Ml"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1764705882352941" green="0.58431372549019611" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zvg-33-mlJ" firstAttribute="leading" secondItem="13h-SZ-JfH" secondAttribute="leading" constant="388" id="6Nz-b6-Ia8"/>
+                            <constraint firstItem="13h-SZ-JfH" firstAttribute="trailing" secondItem="4pY-0g-7RY" secondAttribute="trailing" constant="388" id="A7g-m8-1jq"/>
+                            <constraint firstItem="svU-84-7fy" firstAttribute="top" secondItem="Zvg-33-mlJ" secondAttribute="bottom" constant="27" id="JWM-0k-Nue"/>
+                            <constraint firstItem="13h-SZ-JfH" firstAttribute="trailing" secondItem="Zvg-33-mlJ" secondAttribute="trailing" constant="388" id="Wnm-gf-UG6"/>
+                            <constraint firstItem="svU-84-7fy" firstAttribute="leading" secondItem="13h-SZ-JfH" secondAttribute="leading" constant="388" id="fCH-cC-L91"/>
+                            <constraint firstItem="4pY-0g-7RY" firstAttribute="top" secondItem="svU-84-7fy" secondAttribute="bottom" constant="20" id="jce-wk-O1v"/>
+                            <constraint firstItem="13h-SZ-JfH" firstAttribute="trailing" secondItem="svU-84-7fy" secondAttribute="trailing" constant="388" id="leM-ZU-ax1"/>
+                            <constraint firstItem="4pY-0g-7RY" firstAttribute="leading" secondItem="13h-SZ-JfH" secondAttribute="leading" constant="388" id="mBE-Ty-XUa"/>
+                            <constraint firstItem="Zvg-33-mlJ" firstAttribute="top" secondItem="13h-SZ-JfH" secondAttribute="top" constant="339" id="wvN-M5-P2c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="13h-SZ-JfH"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="4pY-0g-7RY" id="qaG-27-34o"/>
+                        <outlet property="positionButton" destination="Zvg-33-mlJ" id="5x1-f4-pVh"/>
+                        <segue destination="hcY-D5-7re" kind="unwind" identifier="backToViewController" unwindAction="unwindToViewController:" id="sxG-W9-0WG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lla-wj-CWw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="hcY-D5-7re" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-410.15625" y="-85.15625"/>
+        </scene>
+    </scenes>
+</document>

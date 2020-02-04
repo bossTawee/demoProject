@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CkE-X0-A9G">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kanit-Regular.ttf">
+            <string>Kanit-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Main Login View Controller-->
+        <scene sceneID="OhX-Ur-JAN">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="CkE-X0-A9G" customClass="MainLoginViewController" customModule="ALWPOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LUF-yN-t0q">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NPz-7i-zd3">
+                                <rect key="frame" x="182" y="109" width="660" height="550"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WelCome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fz-Mk-Edd">
+                                        <rect key="frame" x="155" y="70" width="350" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4lp-Ks-Cok"/>
+                                            <constraint firstAttribute="width" constant="350" id="nAf-oa-9Uc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="48"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or connect with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPH-eN-b6b">
+                                        <rect key="frame" x="155" y="397" width="350" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="UKE-qa-aAI"/>
+                                            <constraint firstAttribute="height" constant="35" id="jZJ-3o-Jgn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zxJ-PQ-eQw">
+                                        <rect key="frame" x="155" y="135" width="350" height="90"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bQj-XZ-h6Q">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="40"/>
+                                                <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7rJ-5e-9rt">
+                                                <rect key="frame" x="0.0" y="50" width="350" height="40"/>
+                                                <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="Aja-oe-M0u"/>
+                                            <constraint firstAttribute="height" constant="90" id="UPM-1d-4Gb"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUL-xl-h5w">
+                                        <rect key="frame" x="254" y="240" width="157" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="157" id="Lz8-H2-AGX"/>
+                                            <constraint firstAttribute="height" constant="35" id="iSl-Tp-nEX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="16"/>
+                                        <state key="normal" title="Forgot Password?">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="forgotPasswordButtonTapped:" destination="CkE-X0-A9G" eventType="touchUpInside" id="d8i-cR-9t7"/>
+                                            <segue destination="zbu-Zx-Mf0" kind="show" identifier="gotoPasswordViewController" id="d0l-z7-iHs"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6bU-LG-wo2">
+                                        <rect key="frame" x="280" y="450" width="100" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgN-xy-D9l">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="40"/>
+                                                <state key="normal" image="facebook_Icon"/>
+                                                <connections>
+                                                    <action selector="facebookButtonTapped:" destination="CkE-X0-A9G" eventType="touchUpInside" id="UGF-O7-ey1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwH-5v-jIW">
+                                                <rect key="frame" x="55" y="0.0" width="45" height="40"/>
+                                                <state key="normal" image="gmail_Icon"/>
+                                                <connections>
+                                                    <action selector="gmailButtonTapped:" destination="CkE-X0-A9G" eventType="touchUpInside" id="IOU-MI-LS6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="1Em-uG-igX"/>
+                                            <constraint firstAttribute="width" constant="100" id="POK-f3-uwj"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TcA-ov-LY3">
+                                        <rect key="frame" x="155" y="290" width="350" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9r-Da-mIu">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="40"/>
+                                                <color key="backgroundColor" red="0.1764705882" green="0.58431372550000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                                                <state key="normal" title="LOGIN">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loginButtonTapped:" destination="CkE-X0-A9G" eventType="touchUpInside" id="czF-JZ-IUb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHd-WQ-CLi">
+                                                <rect key="frame" x="0.0" y="50" width="350" height="40"/>
+                                                <color key="backgroundColor" red="0.0" green="0.61641752719999998" blue="0.0027018731930000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                                                <state key="normal" title="SIGN UP">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="registerButtonTapped:" destination="CkE-X0-A9G" eventType="touchUpInside" id="DEA-3J-kbe"/>
+                                                    <segue destination="RTa-gB-iap" kind="show" identifier="gotoRegisterViewController" id="iBh-Eg-e3b"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="HWX-AF-WmC"/>
+                                            <constraint firstAttribute="width" constant="350" id="Zu4-Lx-r4W"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="NPH-eN-b6b" firstAttribute="centerX" secondItem="NPz-7i-zd3" secondAttribute="centerX" id="8Gb-2a-SKJ"/>
+                                    <constraint firstItem="zxJ-PQ-eQw" firstAttribute="centerX" secondItem="NPz-7i-zd3" secondAttribute="centerX" id="CVO-MY-DGC"/>
+                                    <constraint firstItem="6bU-LG-wo2" firstAttribute="centerX" secondItem="NPz-7i-zd3" secondAttribute="centerX" id="DZy-7u-NLv"/>
+                                    <constraint firstItem="TcA-ov-LY3" firstAttribute="top" secondItem="vUL-xl-h5w" secondAttribute="bottom" constant="15" id="FY5-9h-5NH"/>
+                                    <constraint firstAttribute="width" constant="660" id="Iy8-MC-Tdx"/>
+                                    <constraint firstAttribute="bottom" secondItem="6bU-LG-wo2" secondAttribute="bottom" constant="60" id="S6C-23-cJF"/>
+                                    <constraint firstItem="zxJ-PQ-eQw" firstAttribute="top" secondItem="6Fz-Mk-Edd" secondAttribute="bottom" constant="15" id="U8f-HY-cQv"/>
+                                    <constraint firstAttribute="height" constant="550" id="VWS-ib-jYo"/>
+                                    <constraint firstItem="TcA-ov-LY3" firstAttribute="centerX" secondItem="NPz-7i-zd3" secondAttribute="centerX" id="Vua-Qw-fjS"/>
+                                    <constraint firstItem="6Fz-Mk-Edd" firstAttribute="centerX" secondItem="NPz-7i-zd3" secondAttribute="centerX" id="XwC-0b-pgS"/>
+                                    <constraint firstItem="vUL-xl-h5w" firstAttribute="top" secondItem="zxJ-PQ-eQw" secondAttribute="bottom" constant="15" id="daM-MW-lql"/>
+                                    <constraint firstItem="vUL-xl-h5w" firstAttribute="centerX" secondItem="NPz-7i-zd3" secondAttribute="centerX" constant="2.5" id="jZG-ZE-Td0"/>
+                                    <constraint firstItem="NPH-eN-b6b" firstAttribute="top" secondItem="TcA-ov-LY3" secondAttribute="bottom" constant="17" id="kZB-7O-3Z8"/>
+                                    <constraint firstItem="6bU-LG-wo2" firstAttribute="top" secondItem="NPH-eN-b6b" secondAttribute="bottom" constant="18" id="ubs-vZ-7NF"/>
+                                    <constraint firstItem="6Fz-Mk-Edd" firstAttribute="top" secondItem="NPz-7i-zd3" secondAttribute="top" constant="70" id="vUr-TO-rEe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1764705882" green="0.58431372550000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="NPz-7i-zd3" firstAttribute="centerY" secondItem="LUF-yN-t0q" secondAttribute="centerY" id="3nO-0d-UU1"/>
+                            <constraint firstItem="NPz-7i-zd3" firstAttribute="centerX" secondItem="LUF-yN-t0q" secondAttribute="centerX" id="ZGI-1N-nJJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ggo-zE-hfT"/>
+                    </view>
+                    <connections>
+                        <outlet property="facebookButton" destination="EgN-xy-D9l" id="wVL-9x-WKr"/>
+                        <outlet property="gmailButton" destination="cwH-5v-jIW" id="Edm-vp-gEB"/>
+                        <outlet property="loginButton" destination="W9r-Da-mIu" id="pKW-WL-gUO"/>
+                        <outlet property="loginMainView" destination="NPz-7i-zd3" id="ydh-Pe-ASB"/>
+                        <outlet property="passwordTextField" destination="7rJ-5e-9rt" id="8qY-B8-Po6"/>
+                        <outlet property="registerButton" destination="uHd-WQ-CLi" id="2Ja-Qg-T0J"/>
+                        <outlet property="usernameTextField" destination="bQj-XZ-h6Q" id="ajV-fj-qKg"/>
+                        <segue destination="5KB-9f-Eh6" kind="unwind" identifier="backToViewController" unwindAction="unwindToViewController:" id="1vi-Rr-q1c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hOT-eT-j0V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="5KB-9f-Eh6" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="37.5" y="89.84375"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="Uyq-Vb-SmH">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="RTa-gB-iap" customClass="RegisterViewController" customModule="ALWPOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ucc-3p-q3F">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qvu-Cc-Vqv">
+                                <rect key="frame" x="182" y="109" width="660" height="550"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3e-2i-BSU">
+                                        <rect key="frame" x="155" y="125" width="350" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="MZ4-ta-WmB"/>
+                                            <constraint firstAttribute="height" constant="50" id="cfi-Hf-SXh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="48"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fdj-c6-5kW">
+                                        <rect key="frame" x="155" y="205" width="350" height="140"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ud5-I6-J5P">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="40"/>
+                                                <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iFH-Iq-ul8">
+                                                <rect key="frame" x="0.0" y="50" width="350" height="40"/>
+                                                <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cpK-p8-ObM">
+                                                <rect key="frame" x="0.0" y="100" width="350" height="40"/>
+                                                <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="ce9-RM-q5q"/>
+                                            <constraint firstAttribute="width" constant="350" id="rda-qf-swp"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IdG-fx-5g5">
+                                        <rect key="frame" x="155" y="395" width="350" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rP-Ws-zcF">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="40"/>
+                                                <color key="backgroundColor" red="0.1764705882" green="0.58431372550000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                                                <state key="normal" title="REGISTER">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loginButtonTapped:" destination="CkE-X0-A9G" eventType="touchUpInside" id="jg6-Tg-57b"/>
+                                                    <action selector="registerButtonTapped:" destination="RTa-gB-iap" eventType="touchUpInside" id="X8x-15-S4M"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azK-ZU-etL">
+                                                <rect key="frame" x="0.0" y="50" width="350" height="40"/>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.035294117649999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                                                <state key="normal" title="CANCEL">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cancelButtonTapped:" destination="RTa-gB-iap" eventType="touchUpInside" id="817-i5-qw5"/>
+                                                    <action selector="registerButtonTapped:" destination="CkE-X0-A9G" eventType="touchUpInside" id="OMj-Gb-hCg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="YsA-aM-Wm9"/>
+                                            <constraint firstAttribute="width" constant="350" id="zks-dh-aQU"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fdj-c6-5kW" firstAttribute="centerX" secondItem="Qvu-Cc-Vqv" secondAttribute="centerX" id="5kB-gL-lW0"/>
+                                    <constraint firstItem="W3e-2i-BSU" firstAttribute="centerX" secondItem="Qvu-Cc-Vqv" secondAttribute="centerX" id="6KQ-fe-IKj"/>
+                                    <constraint firstAttribute="height" constant="550" id="E3f-yU-mOv"/>
+                                    <constraint firstItem="IdG-fx-5g5" firstAttribute="centerX" secondItem="Qvu-Cc-Vqv" secondAttribute="centerX" id="KcE-2X-0st"/>
+                                    <constraint firstItem="fdj-c6-5kW" firstAttribute="top" secondItem="W3e-2i-BSU" secondAttribute="bottom" constant="30" id="h9K-1M-fCU"/>
+                                    <constraint firstAttribute="width" constant="660" id="hsa-qw-r9S"/>
+                                    <constraint firstItem="fdj-c6-5kW" firstAttribute="centerY" secondItem="Qvu-Cc-Vqv" secondAttribute="centerY" id="ndj-rk-LjA"/>
+                                    <constraint firstItem="IdG-fx-5g5" firstAttribute="top" secondItem="fdj-c6-5kW" secondAttribute="bottom" constant="50" id="uGc-6n-Tvj"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="PS6-u5-hzn"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1764705882" green="0.58431372550000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Qvu-Cc-Vqv" firstAttribute="centerX" secondItem="Ucc-3p-q3F" secondAttribute="centerX" id="eeT-dm-LOl"/>
+                            <constraint firstItem="Qvu-Cc-Vqv" firstAttribute="centerY" secondItem="Ucc-3p-q3F" secondAttribute="centerY" id="hLu-Hm-YX3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="efO-yw-KY6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cpk-LS-aEo"/>
+                    <connections>
+                        <outlet property="RegisterMainView" destination="Qvu-Cc-Vqv" id="y7H-Al-6Yr"/>
+                        <outlet property="cancelButton" destination="azK-ZU-etL" id="TbL-Hc-Un1"/>
+                        <outlet property="confirmPasswordTextField" destination="cpK-p8-ObM" id="b0w-MH-eCh"/>
+                        <outlet property="emailTextField" destination="Ud5-I6-J5P" id="cOo-kg-DGd"/>
+                        <outlet property="passwordTextField" destination="iFH-Iq-ul8" id="EFU-6s-WPX"/>
+                        <outlet property="registerButton" destination="5rP-Ws-zcF" id="gQH-Uw-2y6"/>
+                        <segue destination="vzK-Ms-eLm" kind="unwind" identifier="backToMainLoginViewController" unwindAction="unwindToMainLoginViewController:" id="o9j-zn-OT0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zz5-Gh-Ccw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="vzK-Ms-eLm" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="-285"/>
+        </scene>
+        <!--Forgot Password View Controller-->
+        <scene sceneID="Ex3-da-2KH">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="zbu-Zx-Mf0" customClass="ForgotPasswordViewController" customModule="ALWPOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cJq-gX-Oc4">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YWb-jl-9Vi">
+                                <rect key="frame" x="182" y="109" width="660" height="550"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gk4-Nt-Tp9">
+                                        <rect key="frame" x="155" y="255" width="350" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="Lxh-IX-2hr"/>
+                                            <constraint firstAttribute="height" constant="40" id="njr-oX-0Ug"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lyX-Q2-Kfl">
+                                        <rect key="frame" x="155" y="325" width="350" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwX-xW-LHU">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="40"/>
+                                                <color key="backgroundColor" red="0.1764705882" green="0.58431372550000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                                                <state key="normal" title="SEND EMAIL">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="confirmButtonTapped:" destination="zbu-Zx-Mf0" eventType="touchUpInside" id="WHt-E5-z2m"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIE-4C-L6e">
+                                                <rect key="frame" x="0.0" y="50" width="350" height="40"/>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.035294117649999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="17"/>
+                                                <state key="normal" title="CANCEL">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cancelButtonTapped:" destination="zbu-Zx-Mf0" eventType="touchUpInside" id="8Sg-PT-NdQ"/>
+                                                    <action selector="registerButtonTapped:" destination="CkE-X0-A9G" eventType="touchUpInside" id="rda-pV-4Ef"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="CQM-sQ-rEL"/>
+                                            <constraint firstAttribute="width" constant="350" id="HhP-s2-Kg2"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1U-VE-Pft">
+                                        <rect key="frame" x="155" y="170" width="350" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="3nu-Dc-cdg"/>
+                                            <constraint firstAttribute="height" constant="70" id="cDJ-cR-g3D"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kanit-Regular" family="Kanit" pointSize="48"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="660" id="OPS-vM-QNh"/>
+                                    <constraint firstItem="Gk4-Nt-Tp9" firstAttribute="centerY" secondItem="YWb-jl-9Vi" secondAttribute="centerY" id="Rt2-Vx-iMS"/>
+                                    <constraint firstAttribute="height" constant="550" id="WWM-RV-bOy"/>
+                                    <constraint firstItem="v1U-VE-Pft" firstAttribute="centerX" secondItem="YWb-jl-9Vi" secondAttribute="centerX" id="Y0M-Xw-eHu"/>
+                                    <constraint firstItem="lyX-Q2-Kfl" firstAttribute="centerX" secondItem="YWb-jl-9Vi" secondAttribute="centerX" id="bNA-nI-LKi"/>
+                                    <constraint firstItem="lyX-Q2-Kfl" firstAttribute="top" secondItem="Gk4-Nt-Tp9" secondAttribute="bottom" constant="30" id="ic8-9i-fJp"/>
+                                    <constraint firstItem="Gk4-Nt-Tp9" firstAttribute="centerX" secondItem="YWb-jl-9Vi" secondAttribute="centerX" id="oq0-Kc-kDD"/>
+                                    <constraint firstItem="Gk4-Nt-Tp9" firstAttribute="top" secondItem="v1U-VE-Pft" secondAttribute="bottom" constant="15" id="ylN-I6-pBf"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="Bbe-vf-s8T"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1764705882" green="0.58431372550000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="YWb-jl-9Vi" firstAttribute="centerX" secondItem="cJq-gX-Oc4" secondAttribute="centerX" id="ANH-AE-apo"/>
+                            <constraint firstItem="YWb-jl-9Vi" firstAttribute="centerY" secondItem="cJq-gX-Oc4" secondAttribute="centerY" id="cp5-2S-Edr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sZR-Hh-nwY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6n0-Qy-pHy"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="sIE-4C-L6e" id="wDK-u5-CNp"/>
+                        <outlet property="confirmButton" destination="uwX-xW-LHU" id="p51-wf-3nM"/>
+                        <outlet property="emailTextField" destination="Gk4-Nt-Tp9" id="kH1-O1-Kyc"/>
+                        <outlet property="forgetPasswordView" destination="YWb-jl-9Vi" id="fKo-77-7EU"/>
+                        <segue destination="Ca9-AK-4g8" kind="unwind" identifier="backToMainLoginViewController" unwindAction="unwindToMainLoginViewController:" id="en2-n5-MQh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L5m-4J-pTH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Ca9-AK-4g8" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="912.89062499999989" y="508.59375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="facebook_Icon" width="40" height="40"/>
+        <image name="gmail_Icon" width="40" height="39.5"/>
+    </resources>
+</document>

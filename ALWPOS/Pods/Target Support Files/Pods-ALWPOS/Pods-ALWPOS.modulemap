@@ -1,0 +1,6 @@
+framework module Pods_ALWPOS {
+  umbrella header "Pods-ALWPOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
