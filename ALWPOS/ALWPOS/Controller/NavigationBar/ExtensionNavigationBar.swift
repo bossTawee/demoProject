@@ -138,11 +138,12 @@ extension UIViewController{
     }
     
     @objc func settingPage() {
-        if let vc = UIStoryboard(name: "Setting", bundle: nil).instantiateViewController(withIdentifier: "setting") as? SettingViewController {
-            if let navigator = navigationController {
-                navigator.pushViewController(vc, animated: true)
-            }
-        }
+        print("gotosetting")
+//        if let vc = UIStoryboard(name: "Setting", bundle: nil).instantiateViewController(withIdentifier: "setting") as? SettingViewController {
+//            if let navigator = navigationController {
+//                navigator.pushViewController(vc, animated: true)
+//            }
+//        }
     }
 
 }
